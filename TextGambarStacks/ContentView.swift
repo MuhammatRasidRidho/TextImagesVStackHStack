@@ -10,7 +10,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        VStack(alignment: .center) {
+            
+            Image("kemojo")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .cornerRadius(60)
+                .padding(.all)
+               // . clipShape(Circle())
+            
+            Text("Baris Pertama")
+                .font(.largeTitle)
+                .foregroundColor(.purple)
+            
+            Text("Baris Kedua")
+                .font(.title)
+                .foregroundColor(.blue)
+            
+            HStack{
+                Text("Sebelah Kiri")
+                Text("Sebelah Kanan")
+                .padding(.all)
+            }
+        }
     }
 }
 
